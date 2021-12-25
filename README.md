@@ -8,17 +8,20 @@ Install plugin
 
 In `gatsby-config.js`
 
-    module.exports = {
-	    plugins: [
-		    {
-			    resolve:  `gatsby-unsplash`,
-			    options:  {
-				    client_id:  `UNSPLASH_ACCESS_KEY`,
-				    username:  "USERNAME",
-			    },
-		    },
-	    ]
-    }
+```js
+module.exports = {
+  plugins: [
+    {
+      resolve: `gatsby-unsplash`,
+      options: {
+        client_id: `YogTLGb37qYyNmkhC6GwYPo4HZNTYbWR9Cp1OABAXVI`,
+        username: "beratbozkurt0",
+      },
+    },
+  ],
+}
+```
+
 **Note:** Every application must abide by the [API Guidelines](https://help.unsplash.com/api-guidelines/unsplash-api-guidelines). Specifically, remember to [hotlink images](https://help.unsplash.com/api-guidelines/more-on-each-guideline/guideline-hotlinking-images), [attribute photographers](https://help.unsplash.com/api-guidelines/more-on-each-guideline/guideline-attribution), and [trigger a download when appropriate](https://help.unsplash.com/api-guidelines/more-on-each-guideline/guideline-triggering-a-download).
 
 ## Querying Unsplash Images
@@ -26,21 +29,23 @@ In `gatsby-config.js`
 Once the plugin is configured, two new queries are available in GrapHQL: `allUnsplashImage` and `unsplashImage`.
 Here's an example query to load all images:
 
-    query {
-        allUnsplashImage {
-          edges {
-            node {
-              id
-              urls {
-                regular
-                small
-              }
-              width
-              height
-            }
+```js
+  query {
+    allUnsplashImage {
+      edges {
+        node {
+          id
+          urls {
+            regular
+            small
           }
+          width
+          height
         }
       }
+    }
+  }
+```
 
 ## TODO
 
