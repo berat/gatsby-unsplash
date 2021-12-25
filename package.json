@@ -1,0 +1,22 @@
+{
+  "name": "gatsby-unsplash",
+  "version": "1.0.0",
+  "description": "This plugin for Gatsby will make images from Unsplash available in GrapHQL queries",
+  "author": "Berat Bozkurt <beratbozkurt1999@gmail.com>",
+  "repository": "https://github.com/berat/gatsby-unsplash.git",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "unsplash",
+    "photos"
+  ],  
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo \"No build script setup\""
+  },
+  "dependencies": {
+    "axios": "^0.24.0"
+  }
+}
